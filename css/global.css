@@ -1,0 +1,26 @@
+body{
+    background-color: #F2B28C;
+}
+.tx{
+    font-family: 'Inknut Antiqua', serif;
+}
+.carousel-slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.show {
+    opacity: 1;
+}
+
+a{
+    color: #303030;
+    text-decoration: none;
+}
+.text-white{
+    color: white;
+}
+
+.reserva{
+    font-size: small;
+}

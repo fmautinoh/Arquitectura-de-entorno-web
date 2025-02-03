@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Perú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <header class="bg-[#F6DED8] p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10 shadow-lg">
+        <img src="../images/logo.png" alt="Turismo Perú" class="w-24">
+        <nav class="flex space-x-4">
+            <ul class="list-none flex m-0 p-0 text-xl">
+                <li class="mr-5"><a href="../index.html" class="text-gray-700 hover:text-gray-900">Inicio</a></li>
+                <li class="relative mr-5 group">
+                    <a href="#" class="text-gray-700 hover:text-gray-900 flex items-center font-bold">Destinos Perú
+                        <span class="ml-1">&#9662;</span></a>
+                    <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Costa</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sierra</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Selva</a></li>
+                    </ul>
+                </li>
+                <li class="relative mr-5 group">
+                    <a href="#" class="text-gray-700 hover:text-gray-900 flex items-center">Tours Perú <span
+                            class="ml-1">&#9662;</span></a>
+                    <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Aventura</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Ecoturismo Y
+                                Naturaleza</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Cultural</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Gastronomicos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mr-5"><a href="../pages/about.html" class="text-gray-700 hover:text-gray-900">Acerda
+                        de...</a></li>
+            </ul>
+        </nav>
+        <a class="bg-black text-white px-4 py-2 rounded-md button" href="#">Separa tus Vacaciones YA!!</a>
+    </header>
+    <div class="flex flex-col items-center justify-center pt-32">
+        <div class="flex w-screen h-auto justify-center">
+            <!-- Primera columna: REGIÓN COSTA -->
+            <section class="w-1/5 flex items-center justify-center">
+                <div class="bg-[#D2665A] text-[#F6DED8] text-2xl font-semibold rounded-lg text-center p-4 w-3/4">
+                    REGIÓN COSTA
+                </div>
+            </section>
+
+            <!-- Segunda columna: Carrusel -->
+            <section class="w-3/5 flex justify-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide mt-5 w-full max-w-[840px]"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Primer ítem del carrusel -->
+                        <div class="carousel-item active">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8]">
+                                        Chan Chan
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Chan Chan es la ciudad de adobe más grande de América y la capital del antiguo
+                                        Reino
+                                        Chimú.
+                                        Ubicada en la costa norte de Perú, cerca de Trujillo, esta impresionante ciudad
+                                        preincaica
+                                        data del siglo IX y se extiende sobre 20 km².
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/chanchan.png" class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+
+                        <!-- Segundo ítem del carrusel -->
+                        <div class="carousel-item">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8]">
+                                        Punta Sal
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Uno de los destinos de playa más exclusivos del norte de Perú, famoso por sus
+                                        aguas
+                                        cálidas y
+                                        arena blanca, ideal para el descanso y deportes acuáticos.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/punta-sal.png" class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+
+                        <!-- Tercer ítem del carrusel -->
+                        <div class="carousel-item">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8]">
+                                        Monasterio de Santa Catalina
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Ubicado en el corazón de Arequipa, Perú, este convento del siglo XVI es una de
+                                        las
+                                        joyas
+                                        arquitectónicas más importantes del país.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/monasterio-catalina.png"
+                                    class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="flex w-screen justify-center">
+
+            <!-- primera columna: Carrusel -->
+            <section class="w-3/5 flex justify-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide mt-5 w-full max-w-[840px]"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Primer ítem del carrusel -->
+                        <div class="carousel-item active">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8]">
+                                        Machu Picchu
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Machu Picchu es una ciudadela inca ubicada en las alturas de las montañas de los
+                                        Andes en Perú, sobre el valle del río Urubamba. Se construyó en el siglo XV y
+                                        luego
+                                        fue abandonada, y es famosa por sus sofisticadas paredes de piedra seca que
+                                        combinan
+                                        enormes bloques sin el uso de un mortero, los edificios fascinantes que se
+                                        relacionan con las alineaciones astronómicas y sus vistas panorámicas. El uso
+                                        exacto
+                                        que tuvo sigue siendo un misterio.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/machu-pichu.png" class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+
+                        <!-- Segundo ítem del carrusel -->
+                        <div class="carousel-item">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8]">
+                                        Camino del Inca
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Un icónico sendero de trekking que conecta Cusco con Machu Picchu, el Camino
+                                        Inca es una experiencia única para los amantes de la naturaleza y la historia.
+                                        Este recorrido de 4 días atraviesa paisajes impresionantes, desde bosques
+                                        nubosos hasta montañas nevadas, y permite explorar antiguos sitios arqueológicos
+                                        incas como Wiñay Wayna y Phuyupatamarca.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/camino-inca.jpg" class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+
+                        <!-- Tercer ítem del carrusel -->
+                        <div class="carousel-item">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8] reserva">
+                                        Reserva Nacional de Salinas y Aguada Blanca
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Situada en la región de Arequipa, Perú, esta reserva abarca una vasta área de
+                                        paisajes andinos que incluyen altiplanos, salares y humedales, siendo hogar de
+                                        diversas especies de flora y fauna como la vicuña, el guanaco y varias especies
+                                        de aves migratorias. Es un lugar clave para la conservación de los ecosistemas
+                                        de alta montaña y cuenta con impresionantes formaciones geológicas y una gran
+                                        biodiversidad. Los visitantes pueden disfrutar de su belleza natural, hacer
+                                        trekking y observar la vida silvestre en su hábitat natural.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/reserva-salinas.jpg" class="rounded-lg max-w-[700x] max-h-[244px]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- segunda columna: REGIÓN COSTA -->
+            <section class="w-1/5 flex items-center justify-center">
+                <div class="bg-[#D2665A] text-[#F6DED8] text-2xl font-semibold rounded-lg text-center p-4 w-3/4">
+                    REGIÓN SIERRA
+                </div>
+            </section>
+        </div>
+        <div class="flex w-screen justify-center">
+            <!-- Primera columna: REGIÓN COSTA -->
+            <section class="w-1/5 flex items-center justify-center">
+                <div class="bg-[#D2665A] text-[#F6DED8] text-2xl font-semibold rounded-lg text-center p-4 w-3/4">
+                    REGIÓN SELVA
+                </div>
+            </section>
+
+            <!-- Segunda columna: Carrusel -->
+            <section class="w-3/5 flex justify-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide mt-5 w-full max-w-[840px]"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Primer ítem del carrusel -->
+                        <div class="carousel-item active">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8]">
+                                        Kuélap
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Una de las fortalezas preincaicas más impresionantes, ubicada en la región de
+                                        Amazonas, Perú. Construida por la cultura Chachapoya entre los siglos VI y IX,
+                                        Kuélap se encuentra a más de 3,000 metros sobre el nivel del mar, en la cima de
+                                        una montaña, y está rodeada por un paisaje montañoso espectacular. La ciudadela
+                                        fortificada cuenta con enormes murallas de piedra, templos, y más de 400
+                                        edificios que han perdurado a lo largo de los siglos. Además, sus estructuras
+                                        muestran un alto nivel de ingeniería y planificación urbana.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/Kuelap.jpg" class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+
+                        <!-- Segundo ítem del carrusel -->
+                        <div class="carousel-item">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8]">
+                                        Casas Coloniales de Caucheros
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Estas históricas construcciones se encuentran en la región amazónica de Perú,
+                                        especialmente en ciudades como Iquitos y Pucallpa, y son testimonio del auge del
+                                        caucho en el siglo XIX y principios del XX. Durante este período, los
+                                        "caucheros" (explotadores del caucho) construyeron grandes mansiones de estilo
+                                        colonial, influenciadas por la arquitectura europea, que contrastaban con el
+                                        entorno selvático. Estas casas solían ser elegantes, con techos altos, amplios
+                                        ventanales y detalles ornamentales, reflejando la riqueza generada por la
+                                        explotación del caucho.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/casona-caucho.webp" class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+
+                        <!-- Tercer ítem del carrusel -->
+                        <div class="carousel-item">
+                            <div class="bg-[#F6DED8] rounded-lg p-8 flex items-center space-x-8 shadow-md">
+                                <!-- Título y Descripción -->
+                                <div class="w-1/3 text-lg">
+                                    <h3
+                                        class="text-lg font-bold bg-[#D97A76] inline-block px-4 py-1 rounded-md text-[#F6DED8] reserva">
+                                        Reserva Nacional Pacaya-Samiria
+                                    </h3>
+                                    <p class="pt-6 block max-h-24 overflow-hidden text-ellipsis text-[54.4%]">
+                                        Ubicada en la región de Loreto, en la selva amazónica de Perú, esta reserva es
+                                        una de las áreas protegidas más grandes del país, con más de 2 millones de
+                                        hectáreas de bosques húmedos y humedales. Es un refugio vital para una increíble
+                                        biodiversidad, incluyendo especies emblemáticas como el delfín rosado, el
+                                        manatí, jaguares, y una gran variedad de aves, reptiles e insectos. La reserva
+                                        es conocida por sus intrincados sistemas fluviales y su belleza natural,
+                                        ofreciendo a los visitantes experiencias de ecoturismo y avistamiento de vida
+                                        silvestre.
+                                    </p>
+                                    <a href="#" class="text-blue-600 hover:underline pt-7 block">Ver más...</a>
+                                </div>
+
+                                <!-- Imagen -->
+                                <img src="../images/reserva-nacional-pacayasamiria.jpg"
+                                    class="rounded-lg max-w-[487px] max-h-[244px]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
