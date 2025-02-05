@@ -41,7 +41,7 @@
                 </ul>
             </nav>
             <a class="bg-black text-white px-4 py-2 rounded-md button hover:bg-gray-500"
-                href="../pages/destinos.html">Separa tus Vacaciones YA!!</a>
+                href="../pages/about.html#Contact">Separa tus Vacaciones YA!!</a>
         </div>
     </header>
     <div>
@@ -66,13 +66,14 @@
                             aquí descritos, deberá abstenerse de utilizar este sitio web.
                         </p>
                         <div class="flex justify-end">
-                            <button class="mt-4 bg-gray-800 text-white px-4 py-2 rounded-md">Leer más...</button>
+                            <a class="mt-4 bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-500" href="#"
+                                id="readMoreBtn">Leer más...</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="bg-[#F6DED8] p-6 rounded-lg mb-6 flex items-start w-full">
+            <section id="Contact" class="bg-[#F6DED8] p-6 rounded-lg mb-6 flex items-start w-full">
                 <div class="flex flex-col w-3/3">
                     <h2 class="text-2xl font-bold text-center w-full text-[180%] font-bold">Contáctanos</h2>
                     <div class="flex justify-around mt-4">
@@ -98,6 +99,78 @@
         </main>
     </div>
 
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg max-w-2xl w-full p-6 mt-[10%]">
+            <h2 class="text-xl font-bold text-center mb-4">TÉRMINOS Y CONDICIONES DE USO</h2>
+            <div class="max-h-96 overflow-y-auto">
+                <p class="mb-4 text-sm text-gray-700">
+                    Es requisito necesario para la adquisición de los productos y servicios que se ofrecen en este sitio
+                    web que lea y acepte los siguientes Términos y Condiciones que se describen a continuación. El uso
+                    de nuestros servicios y la compra de productos implicará que usted ha leído y aceptado los Términos
+                    y Condiciones de Uso en el presente documento. En caso de que no acepte los términos y condiciones
+                    aquí descritos, deberá abstenerse de utilizar este sitio web.
+                    Este sitio web está diseñado para ofrecer información, servicios y productos relacionados con
+                    turismo, incluyendo pero no limitándose a paquetes turísticos, reservas de alojamiento, transporte,
+                    guías de viaje y actividades recreativas. Nos reservamos el derecho de cambiar, modificar, agregar o
+                    eliminar partes de estos términos en cualquier momento y sin previo aviso. Es responsabilidad del
+                    usuario revisar estos términos periódicamente para asegurarse de estar informado de cualquier
+                    cambio.
+                </p>
+                <h3 class="text-lg font-semibold mt-4 text-center">INFORMACIÓN RELEVANTE</h3>
+                <p class="text-sm text-gray-700">
+                    Turismo Perú actúa como intermediario entre los usuarios y los proveedores de servicios turísticos
+                    (hoteles, aerolíneas, operadores turísticos, etc.). Por ello, no somos responsables de:
+                </p>
+                <ul class="list-disc ml-6 text-sm text-gray-700">
+                    <li>Daños o pérdidas derivados de retrasos, cancelaciones o incumplimientos.</li>
+                    <li>Accidentes o inconvenientes durante el uso de los servicios contratados.</li>
+                    <li>Información incorrecta proporcionada por el usuario.</li>
+                </ul>
+                <p class="text-sm text-gray-700">Además, los precios publicados en el sitio están sujetos a cambios sin
+                    previo aviso, y las políticas
+                    de cancelación y reembolso pueden variar dependiendo del servicio contratado. Estas políticas
+                    estarán detalladas en la confirmación de su reserva o compra.
+                    El usuario es responsable de cumplir con los requisitos legales y migratorios (como visados y
+                    documentación) necesarios para los servicios adquiridos. Recomendamos revisar las políticas de cada
+                    servicio antes de completar una reserva.</p>
+                <h3 class="text-lg font-semibold mt-4 text-center">LICENCIA</h3>
+                <p class="text-sm text-gray-700">
+                    Turismo Perú otorga una licencia limitada, no exclusiva, no transferible y revocable para que usted pueda hacer
+                    uso del sitio web en estricta conformidad con los Términos y Condiciones aquí descritos.
+                    El usuario no está autorizado a realizar un mal uso de los servicios ofrecidos en el sitio web,
+                    como:
+                </p>
+                <ul class="list-disc ml-6 text-sm text-gray-700">
+                    <li>Publicar o reproducir contenido protegido por derechos de autor.</li>
+                    <li>Realizar actividades fraudulentas.</li>
+                    <li>Intentar obtener acceso no autorizado.</li>
+                    <li>Usar bots para extracción de datos.</li>
+                </ul>
+                <p class="text-sm text-gray-700">Todos los contenidos presentes en este sitio web, incluidos textos,
+                    gráficos, logotipos, imágenes, videos, software y otros materiales, son propiedad de [Nombre del
+                    sitio web] o de terceros con licencia. Su uso indebido puede estar sujeto a sanciones legales.</p>
+                <p class="text-sm text-gray-700 mt-4">Fecha de última actualización: 05 de febrero del 2025</p>
+            </div>
+            <div class="mt-6 flex justify-end">
+                <button id="closeModal"
+                    class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("closeModal").addEventListener("click", function () {
+            document.getElementById("modal").style.display = "none";
+        });
+    </script>
+
+
+    <script>
+        document.getElementById('readMoreBtn').addEventListener('click', function () {
+            document.getElementById('modal').classList.remove('hidden');
+        });
+    </script>
 </body>
 
 </html>
