@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Perú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="icon" href="../images/logo.png">
+</head>
+
+<body>
+    <header class="bg-[#F6DED8] p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10 shadow-lg">
+        <img src="../images/logo.png" alt="Turismo Perú" class="w-24">
+        <nav class="flex space-x-4">
+            <ul class="list-none flex m-0 p-0 text-xl">
+                <li class="mr-5"><a href="../index.html" class="text-gray-700 hover:text-gray-900">Inicio</a></li>
+                <li class="relative mr-5 group">
+                    <a href="../pages/destinos.html"
+                        class="text-gray-700 hover:text-gray-900 flex items-center font-bold">Destinos Perú
+                        <span class="ml-1">&#9662;</span></a>
+                    <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Costa</a></li>
+                        <li><a href="../pages/sierra.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sierra</a></li>
+                        <li><a href="../pages/selva.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Selva</a></li>
+                    </ul>
+                </li>
+                <li class="relative mr-5 group">
+                    <a href="#" class="text-gray-700 hover:text-gray-900 flex items-center">Tours Perú <span
+                            class="ml-1">&#9662;</span></a>
+                    <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Aventura</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Ecoturismo Y
+                                Naturaleza</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Cultural</a></li>
+                    </ul>
+                </li>
+                <li class="mr-5"><a href="../pages/about.html" class="text-gray-700 hover:text-gray-900">Acerda
+                        de...</a></li>
+            </ul>
+        </nav>
+        <a class="bg-black text-white px-4 py-2 rounded-md button" href="#">Separa tus Vacaciones YA!!</a>
+    </header>
+
+    <div class="relative flex items-center justify-center mt-[80px]">
+        <img src="../images/aventura.png" alt="Costa Peruana" class="w-full h-[400px]">
+        <h2
+            class="absolute text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-lg items-center justify-center tit">
+            AVENTURA
+        </h2>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <section class="p-6 rounded-lg mb-8 w-[90%] mx-auto">
+            <h2 class="text-center txt font-bold mb-5 ml-12">Trekking en la Laguna 69</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="../images/lagon-69.png" class="rounded-lg mb-4 md:mb-0 md:mr-6 w-[40%]" alt="Laguna 69">
+                <div class="text-center md:text-left desc">
+                    <h3>Información General</h3>
+                    <p>La Laguna 69 es una de las joyas de la Cordillera Blanca, ubicada en el
+                        Parque
+                        Nacional Huascarán. Su impresionante color turquesa y el paisaje montañoso que la rodea la
+                        convierten en un destino imprescindible para los amantes del trekking. La caminata de ida y
+                        vuelta
+                        es de aproximadamente 14 km y dura entre 6 y 8 horas, con una dificultad moderada-alta debido a
+                        la
+                        altitud (4600 msnm). Se recomienda aclimatarse previamente en Huaraz y contratar un tour que
+                        incluya
+                        transporte, guía y equipo necesario.</p>
+                    <h3>Ubicación</h3>
+                    <p> Parque Nacional Huascarán, Cordillera Blanca, Huaraz, Perú.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-6 rounded-lg mb-8 w-[90%] mx-auto">
+            <h2 class="text-center txt font-bold mb-5 mr-4">Parapente en Miraflores</h2>
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <img src="../images/parapente.png" class="rounded-lg mb-4 md:mb-0 md:ml-6 w-[40%]" alt="parapente">
+                <div class="text-center md:text-left desc">
+                    <h3>Información General</h3>
+                    <p>Miraflores es uno de los distritos más turísticos de Lima, conocido por sus hermosas playas,
+                        parques y acantilados. El parapente es una actividad popular que permite disfrutar de vistas
+                        panorámicas de la costa y la ciudad. Los vuelos suelen durar entre 10 y 20 minutos y son
+                        realizados por pilotos profesionales con experiencia. Se ofrecen vuelos tándem para
+                        principiantes y también se pueden tomar clases para aprender a volar solo.</p>
+                    <h3>Ubicación</h3>
+                    <p> Malecón de Miraflores, Lima, Perú.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-6 rounded-lg mb-8 w-[90%] mx-auto">
+            <h2 class="text-center txt font-bold mb-5">Surf en Máncora</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="../images/surf.png" class="rounded-lg mb-4 md:mb-0 md:mr-6 w-[40%]" alt="surf">
+                <div class="text-center md:text-left desc">
+                    <h3>Información General</h3>
+                    <p>Máncora es un paraíso para los surfistas, con olas de clase mundial y un ambiente relajado. La
+                        playa principal es ideal para principiantes, mientras que otras playas cercanas como Lobitos y
+                        Cabo Blanco ofrecen olas más grandes y desafiantes. Hay numerosas escuelas de surf que ofrecen
+                        clases y alquiler de equipos. La mejor época para surfear en Máncora es de diciembre a marzo,
+                        durante la temporada de verano.</p>
+                    <h3>Ubicación</h3>
+                    <p> Máncora, Piura, Perú.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-6 rounded-lg mb-8 w-[90%] mx-auto">
+            <h2 class="text-center txt font-bold mb-5">Ciclismo en el
+                Valle Sagrado</h2>
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <img src="../images/lagon-69.png" class="rounded-lg mb-4 md:mb-0 md:ml-6 w-[40%]" alt="Laguna 69">
+                <div class="text-center md:text-left desc">
+                    <h3>Información General</h3>
+                    <p>El Valle Sagrado de los Incas es una región llena de historia y belleza natural, con pueblos
+                        pintorescos, sitios arqueológicos impresionantes y paisajes montañosos. El ciclismo es una forma
+                        emocionante de explorar el valle, disfrutando de la libertad de ir a tu propio ritmo y
+                        descubriendo lugares fuera de las rutas turísticas tradicionales. Se pueden alquilar bicicletas
+                        en Cusco o en los pueblos del valle, y hay muchas rutas disponibles para todos los niveles de
+                        dificultad.</p>
+                    <h3>Ubicación</h3>
+                    <p> Valle Sagrado de los Incas, Cusco, Perú.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

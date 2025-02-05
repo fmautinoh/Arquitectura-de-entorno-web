@@ -1,9 +1,11 @@
-body{
+body {
     background-color: #F2B28C;
 }
-.tx{
+
+.tx {
     font-family: 'Inknut Antiqua', serif;
 }
+
 .carousel-slide {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -13,18 +15,47 @@ body{
     opacity: 1;
 }
 
-a{
+a {
     color: #303030;
     text-decoration: none;
 }
-.text-white{
+
+.text-white {
     color: white;
 }
 
-.reserva{
+.reserva {
     font-size: small;
 }
 
-.carousel-item{
+.carousel-item {
     background-color: #F6DED8;
+}
+
+.txt {
+    font-size: 64px;
+    color: #F6DED8;
+    font-family: "Joti One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 17.92px;
+}
+
+.desc {
+    font-family: "Joti One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.72px;
+}
+
+.tit {
+    font-family: 'Joti One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 17.92px;
+    color: #ff0000;
 }
