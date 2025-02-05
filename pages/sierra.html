@@ -12,39 +12,40 @@
 </head>
 
 <body>
-    <header class="bg-[#F6DED8] p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10 shadow-lg">
-        <img src="../images/logo.png" alt="Turismo Perú" class="w-24">
-        <nav class="flex space-x-4">
-            <ul class="list-none flex m-0 p-0 text-xl">
-                <li class="mr-5"><a href="../index.html" class="text-gray-700 hover:text-gray-900">Inicio</a></li>
-                <li class="relative mr-5 group">
-                    <a href="../pages/destinos.html"
-                        class="text-gray-700 hover:text-gray-900 flex items-center font-bold">Destinos Perú
-                        <span class="ml-1">&#9662;</span></a>
-                    <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
-                        <li><a href="../pages/costa.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Costa</a></li>
-                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sierra</a></li>
-                        <li><a href="../pages/selva.html"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Selva</a></li>
-                    </ul>
-                </li>
-                <li class="relative mr-5 group">
-                    <a href="#" class="text-gray-700 hover:text-gray-900 flex items-center">Tours Perú <span
-                            class="ml-1">&#9662;</span></a>
-                    <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
-                        <li><a href="../pages/Aventura.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Aventura</a></li>
-                        <li><a href="../pages/Ecoturismo.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Ecoturismo Y
-                                Naturaleza</a></li>
-                        <li><a href="../pages/Cultural.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Cultural</a></li>
-                    </ul>
-                </li>
-                <li class="mr-5"><a href="../pages/about.html" class="text-gray-700 hover:text-gray-900">Acerda
-                        de...</a></li>
-            </ul>
-        </nav>
-        <a class="bg-black text-white px-4 py-2 rounded-md button" href="#">Separa tus Vacaciones YA!!</a>
+    <header class=" bg-[#F6DED8] shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <img src="../images/logo.png" alt="Turismo Perú" class="w-24">
+            <nav>
+                <ul class="flex space-x-6 text-lg font-medium ">
+                    <li><a href="../index.html" class="text-gray-700 hover:text-blue-600">Inicio</a></li>
+                    <li class="relative group">
+                        <a href="../pages/destinos.html" class="text-gray-700 hover:text-blue-600">Destinos Perú</a>
+                        <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
+                            <li><a href="../pages/costa.html" class="block px-4 py-2 hover:bg-gray-100">Costa</a></li>
+                            <li><a href="../pages/sierra.html" class="block px-4 py-2 hover:bg-gray-100">Sierra</a></li>
+                            <li><a href="../pages/selva.html" class="block px-4 py-2 hover:bg-gray-100">Selva</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative mr-5 group">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 flex items-center">Tours Perú </a>
+                        <ul class="list-none p-0 m-0 absolute hidden bg-white shadow-md group-hover:block">
+                            <li><a href="../pages/Aventura.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Aventura</a></li>
+                            <li><a href="../pages/Ecoturismo.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Ecoturismo Y
+                                    Naturaleza</a></li>
+                            <li><a href="../pages/Cultural.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Cultural</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../pages/about.html" class="text-gray-700 hover:text-blue-600">Acerca de</a></li>
+                </ul>
+            </nav>
+            <a class="bg-black text-white px-4 py-2 rounded-md button hover:bg-gray-500"
+                href="../pages/destinos.html">Separa tus Vacaciones YA!!</a>
+        </div>
     </header>
+
     <div class="relative flex items-center justify-center mt-[80px]">
         <img src="../images/sierra.png" alt="Sierra Peruana" class="w-full h-[400px]">
         <h2 class="absolute text-white text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
