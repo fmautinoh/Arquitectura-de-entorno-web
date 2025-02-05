@@ -59,3 +59,12 @@ a {
     letter-spacing: 17.92px;
     color: #ff0000;
 }
+
+.desc h3{
+    font-family: "Joti One";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 8.96px;
+}
