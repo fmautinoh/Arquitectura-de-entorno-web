@@ -40,8 +40,8 @@
                     <li><a href="../pages/about.html" class="text-gray-700 hover:text-blue-600">Acerca de</a></li>
                 </ul>
             </nav>
-            <a class="bg-black text-white px-4 py-2 rounded-md button hover:bg-gray-500"
-                href="../pages/about.html#Contact">Separa tus Vacaciones YA!!</a>
+            <a class="bg-black text-white px-4 py-2 rounded-md button hover:bg-gray-500 separa">Separa tus Vacaciones
+                YA!!</a>
         </div>
     </header>
     <div>
@@ -50,7 +50,7 @@
                 <h2 class="text-xl font-bold text-center w-full mb-4 text-[160%] font-bold">Nuestros Términos y
                     Condiciones</h2>
                 <div class="flex w-full">
-                    <img class="w-1/4 h-1/4 mr-4" src="../images/terms.png" alt="terms"/>
+                    <img class="w-1/4 h-1/4 mr-4" src="../images/terms.png" alt="terms" />
                     <div class="flex flex-col w-3/3">
                         <p class="mt-2 w-[95%] text-gray-700 py-8 text-justify text-2xl font-bold">
                             Es requisito necesario para la adquisición de los productos y servicios que se ofrecen en
@@ -136,7 +136,8 @@
                     servicio antes de completar una reserva.</p>
                 <h3 class="text-lg font-semibold mt-4 text-center">LICENCIA</h3>
                 <p class="text-sm text-gray-700">
-                    Turismo Perú otorga una licencia limitada, no exclusiva, no transferible y revocable para que usted pueda hacer
+                    Turismo Perú otorga una licencia limitada, no exclusiva, no transferible y revocable para que usted
+                    pueda hacer
                     uso del sitio web en estricta conformidad con los Términos y Condiciones aquí descritos.
                     El usuario no está autorizado a realizar un mal uso de los servicios ofrecidos en el sitio web,
                     como:
@@ -158,19 +159,9 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.getElementById("closeModal").addEventListener("click", function () {
-            document.getElementById("modal").style.display = "none";
-        });
-    </script>
-
-
-    <script>
-        document.getElementById('readMoreBtn').addEventListener('click', function () {
-            document.getElementById('modal').classList.remove('hidden');
-        });
-    </script>
+    <div id="modalContainer"></div>
+    <script src="../js/leermas.js"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 
 </html>
